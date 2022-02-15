@@ -1,0 +1,49 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(30, 165, 147);
+    padding: 34px;
+    box-shadow: 0px 8px 10px 5px rgb(49, 88, 82);
+    border-radius: 20px;
+}
+
+
+h1{
+    color: rgb(0, 0, 0);
+}
+
+input{
+    width: 100%;
+    display: block;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 150px;
+    background-color: #5df8fd;
+    border-radius: 8px;
+    transition: transform 300ms, background-color 300ms;
+    animation: pulse 500ms;
+}
+
+button:hover {
+    transform: scale(0.95);
+    background-color: #058f88;
+}
+
+button:active {
+    transform: scale(0.90);
+    animation: none;
+}
+
+@keyframes pulse {
+    from {
+        box-shadow: #69ffff 0 0 0;
+    }
+    to {
+        box-shadow: #0ae6c90a 0 0 0 10px;
+    }
+}
